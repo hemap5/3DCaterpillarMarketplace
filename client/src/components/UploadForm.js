@@ -57,7 +57,7 @@ function UploadForm() {
     console.log("upload client",formData)
 
     try {
-      const response = await axios.post('/api/files/upload', formData, {
+      const response = await axios.post('http://localhost:4000/api/files/upload', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
